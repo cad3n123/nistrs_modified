@@ -22,7 +22,7 @@ pub fn runs_test(data: &BitsData) -> TestResultT {
 
     let pi = (n_ones as f64) / (n_bits as f64);
     if (pi - 0.5).abs() > (2.0 / (n_bits as f64).sqrt()) {
-        return (false, 0.5);
+        return (false, 0.0);
     }
 
     let mut v = 1_usize;
